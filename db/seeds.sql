@@ -17,4 +17,4 @@ VALUES ("Assistant, 70000, 1")
 Insert INTO employee (first_name, last_name, roles_id, manager_id)
 Values ("Madison", "Mulligan", 1, NULL),
 ("Jane", "Doe", 2, 1"),
-("Bob", "Williams", 1"),
+("Bob", "Williams", 1, 2"),
