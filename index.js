@@ -4,7 +4,7 @@ const consoleTable = require('console.table');
 
 //Starting the application
 //Presented with questions" View all departments, View all roles, View all employees, Add a department, Add a role, Add an employee, Update an employee role, Quit
-const data = () => {
+const options = () => {
     inquirer.prompt([
         {
         type: 'list',
@@ -19,8 +19,7 @@ const data = () => {
             { name: 'Add an employee', value: 6 },
             { name: 'Update an employee role', value: 7 },
             { name: 'Quit' , value: 8},   
-        ]
-        }
+        ] }
     ])
         .then((data) => {
             if ( data.choices === 1 ) {
